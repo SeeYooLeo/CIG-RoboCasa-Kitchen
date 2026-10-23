@@ -1,0 +1,11 @@
+{
+  "base": {
+    "nav_linear_mps": 0.0,
+    "nav_angular_rps": 0.0,
+    "align_linear_mps": 0.0,
+    "align_angular_rps": 0.0,
+    "manip_linear_mps": 0.0,
+    "manip_angular_rps": 0.0,
+    "ik_base_max_mps": 0.0
+  }
+}

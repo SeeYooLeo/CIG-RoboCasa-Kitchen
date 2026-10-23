@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stretch3-quest-teleop"
+version = "0.1.0"
+description = "Safety-oriented Quest 3S WebXR teleoperation bridge for Hello Robot Stretch 3"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "Stretch 3 VR Teleop contributors"}]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "numpy>=1.24"]
+
+[project.scripts]
+stretch3-vr = "stretch3_quest_teleop.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+stretch3_quest_teleop = ["web/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

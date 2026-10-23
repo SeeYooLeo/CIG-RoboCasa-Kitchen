@@ -1,0 +1,14 @@
+{
+  "base": {
+    "nav_linear_mps": 0.05,
+    "nav_angular_rps": 0.15,
+    "align_linear_mps": 0.04,
+    "align_angular_rps": 0.10,
+    "manip_linear_mps": 0.02,
+    "manip_angular_rps": 0.08,
+    "ik_base_max_mps": 0.03
+  },
+  "controls": {
+    "ee_translation_scale": 0.5
+  }
+}

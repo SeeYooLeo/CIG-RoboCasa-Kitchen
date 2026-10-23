@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CIG · Robot demonstrations</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; color: #172033; background: #f6f8fb; }
+    body { max-width: 1120px; margin: auto; padding: 32px 24px 64px; }
+    a { color: #245cbb; }
+    header { margin-bottom: 40px; }
+    h1 { font-size: clamp(28px, 4vw, 42px); margin-bottom: 12px; }
+    h2 { margin-top: 40px; }
+    h3 { font-size: 17px; margin: 0 0 14px; }
+    p { line-height: 1.6; color: #526077; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+    article { background: white; padding: 18px; border: 1px solid #dce2ec; border-radius: 12px; scroll-margin-top: 24px; }
+    article:target { outline: 3px solid #487bdb; outline-offset: 4px; }
+    video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #111; border-radius: 6px; }
+    .vr { max-width: 840px; }
+    @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="https://github.com/SeeYooLeo/CIG-RoboCasa-Kitchen">← Code and project overview</a>
+    <h1>CIG · Robot demonstrations</h1>
+    <p>Counterfactual Instruction Grounding for Vision-Language-Action Models</p>
+  </header>
+  <main>
+    <h2>Policy rollouts</h2>
+    <p>Autonomous execution on Stretch 3 (5× speed).</p>
+    <div class="grid">
+      <article id="demo1">
+        <h3>Counter-to-rack placement</h3>
+        <video controls playsinline muted preload="metadata" poster="media/counter-to-rack-placement.jpg" aria-label="Counter-to-rack placement">
+          <source src="media/counter-to-rack-placement.mp4" type="video/mp4">
+          <a href="media/counter-to-rack-placement.mp4">Download video</a>
+        </video>
+      </article>
+      <article id="demo22">
+        <h3>Washer-to-basin retrieval</h3>
+        <video controls playsinline muted preload="metadata" poster="media/washer-to-basin-retrieval.jpg" aria-label="Washer-to-basin retrieval">
+          <source src="media/washer-to-basin-retrieval.mp4" type="video/mp4">
+          <a href="media/washer-to-basin-retrieval.mp4">Download video</a>
+        </video>
+      </article>
+      <article id="demo3">
+        <h3>Faucet operation</h3>
+        <video controls playsinline muted preload="metadata" poster="media/faucet-operation.jpg" aria-label="Faucet operation">
+          <source src="media/faucet-operation.mp4" type="video/mp4">
+          <a href="media/faucet-operation.mp4">Download video</a>
+        </video>
+      </article>
+    </div>
+    <h2>VR data collection</h2>
+    <p>Collecting demonstrations with the Quest 3S / WebXR interface.</p>
+    <article id="vr_demo" class="vr">
+      <h3>Stretch 3 VR demonstration</h3>
+      <video controls playsinline muted preload="metadata" poster="media/vr-data-collection.jpg" aria-label="VR data collection">
+        <source src="media/vr-data-collection.mp4" type="video/mp4">
+        <a href="media/vr-data-collection.mp4">Download video</a>
+      </video>
+    </article>
+  </main>
+</body>
+</html>

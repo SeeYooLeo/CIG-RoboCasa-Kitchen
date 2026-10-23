@@ -1,0 +1,200 @@
+{
+  "models": [
+    "oft-baseline",
+    "oft-cig",
+    "pi05-baseline",
+    "pi05-cig"
+  ],
+  "files": [
+    {
+      "path": "weights/oft-baseline/action_head.pt",
+      "size": 302242674,
+      "sha256": "0f2b7ee2503080edee6f45c2fe56510caec8ab75175207b7511cf253fb160149"
+    },
+    {
+      "path": "weights/oft-baseline/added_tokens.json",
+      "size": 21,
+      "sha256": "ab43123267b190cb7990bc9f2ae4ad32dcb7ed029fb0fccb1b4e062c6f54a2a1"
+    },
+    {
+      "path": "weights/oft-baseline/config.json",
+      "size": 60554,
+      "sha256": "9e51c4ccec274db08fee4ed56b83fbeae662a0b8a039babb7a1c9ac8fa560a04"
+    },
+    {
+      "path": "weights/oft-baseline/dataset_statistics.json",
+      "size": 5803,
+      "sha256": "7b0da05ddc6dd219a89c441e1a2be36e88bc8174224282622ed0a7b7a9be3f6f"
+    },
+    {
+      "path": "weights/oft-baseline/generation_config.json",
+      "size": 136,
+      "sha256": "67fbe17b12e8beb5be98eb911483971cc78589e51a37ac0cce9cd499d06a8bf1"
+    },
+    {
+      "path": "weights/oft-baseline/model-00001-of-00004.safetensors",
+      "size": 4925122448,
+      "sha256": "2f79a6163ef3f6c7c74aea6effa8a9da850949ade4d92960cc9ea5df41e2e2d4"
+    },
+    {
+      "path": "weights/oft-baseline/model-00002-of-00004.safetensors",
+      "size": 4947392496,
+      "sha256": "569756d2cb8024d49ab97fe7b5836e2b392d40705d36d34463cd2908b57bbf3a"
+    },
+    {
+      "path": "weights/oft-baseline/model-00003-of-00004.safetensors",
+      "size": 4947417456,
+      "sha256": "d3028a1ac5d3da755606b09d700e3905c656be7c8052ff3337a08383f000153b"
+    },
+    {
+      "path": "weights/oft-baseline/model-00004-of-00004.safetensors",
+      "size": 262668432,
+      "sha256": "a877e3fece1feafb80f59f91585ce04379ee39e2bf9a25cb7b4acf237e896e60"
+    },
+    {
+      "path": "weights/oft-baseline/model.safetensors.index.json",
+      "size": 94764,
+      "sha256": "ca8b53fed8133ee2afcd2fc483de8febf7f5bb0f6bcb09f91189772e59e8f659"
+    },
+    {
+      "path": "weights/oft-baseline/preprocessor_config.json",
+      "size": 1650,
+      "sha256": "bd024783fb785cbdfe35b710b621c5e8678d4c157a9ba625675e67d40d1757da"
+    },
+    {
+      "path": "weights/oft-baseline/processor_config.json",
+      "size": 130,
+      "sha256": "167e026d8121f6cb0bf5c18310b97ba8139152f970822bb3824213bd37dc7a76"
+    },
+    {
+      "path": "weights/oft-baseline/proprio_projector.pt",
+      "size": 67553784,
+      "sha256": "0800d122156d2a6790e2a10bbdcf26a11990331d50460330a992c54ceb22d9f1"
+    },
+    {
+      "path": "weights/oft-baseline/special_tokens_map.json",
+      "size": 552,
+      "sha256": "cb90ee5cf5793aa444039af9795b00db59d3fef8942e7eca9cf1990bab370d61"
+    },
+    {
+      "path": "weights/oft-baseline/tokenizer.json",
+      "size": 1842976,
+      "sha256": "8f5e2869e1807b8bb3c7717a294539c37e9de5d728ad60e31ef57e83cc5ea527"
+    },
+    {
+      "path": "weights/oft-baseline/tokenizer.model",
+      "size": 499723,
+      "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347"
+    },
+    {
+      "path": "weights/oft-baseline/tokenizer_config.json",
+      "size": 1192,
+      "sha256": "f5f1d3ed015ebb71cf11686ff00bc8e0c25957bbf3952f95312cecc9b168fbea"
+    },
+    {
+      "path": "weights/oft-cig/action_head.pt",
+      "size": 302242674,
+      "sha256": "e93274803549472041bfebc7e81800c25c477fea6c4a10cbcce98a3fe7ae25e0"
+    },
+    {
+      "path": "weights/oft-cig/added_tokens.json",
+      "size": 21,
+      "sha256": "ab43123267b190cb7990bc9f2ae4ad32dcb7ed029fb0fccb1b4e062c6f54a2a1"
+    },
+    {
+      "path": "weights/oft-cig/config.json",
+      "size": 60554,
+      "sha256": "9e51c4ccec274db08fee4ed56b83fbeae662a0b8a039babb7a1c9ac8fa560a04"
+    },
+    {
+      "path": "weights/oft-cig/dataset_statistics.json",
+      "size": 5803,
+      "sha256": "7b0da05ddc6dd219a89c441e1a2be36e88bc8174224282622ed0a7b7a9be3f6f"
+    },
+    {
+      "path": "weights/oft-cig/generation_config.json",
+      "size": 136,
+      "sha256": "67fbe17b12e8beb5be98eb911483971cc78589e51a37ac0cce9cd499d06a8bf1"
+    },
+    {
+      "path": "weights/oft-cig/model-00001-of-00004.safetensors",
+      "size": 4925122448,
+      "sha256": "37ac2af955e4774df781c31e91017d1d6bc2b53bee327e81789f229af4acb5c0"
+    },
+    {
+      "path": "weights/oft-cig/model-00002-of-00004.safetensors",
+      "size": 4947392496,
+      "sha256": "01f52dbec07558d94435cf455b51c93149aa5c4fc224ecb476b28d409c3afe58"
+    },
+    {
+      "path": "weights/oft-cig/model-00003-of-00004.safetensors",
+      "size": 4947417456,
+      "sha256": "af4fc95472662c4abcb4f768a2e8d176ebd7258c10a503b34f9596ff57a54ec5"
+    },
+    {
+      "path": "weights/oft-cig/model-00004-of-00004.safetensors",
+      "size": 262668432,
+      "sha256": "a877e3fece1feafb80f59f91585ce04379ee39e2bf9a25cb7b4acf237e896e60"
+    },
+    {
+      "path": "weights/oft-cig/model.safetensors.index.json",
+      "size": 94764,
+      "sha256": "ca8b53fed8133ee2afcd2fc483de8febf7f5bb0f6bcb09f91189772e59e8f659"
+    },
+    {
+      "path": "weights/oft-cig/preprocessor_config.json",
+      "size": 1650,
+      "sha256": "bd024783fb785cbdfe35b710b621c5e8678d4c157a9ba625675e67d40d1757da"
+    },
+    {
+      "path": "weights/oft-cig/processor_config.json",
+      "size": 130,
+      "sha256": "167e026d8121f6cb0bf5c18310b97ba8139152f970822bb3824213bd37dc7a76"
+    },
+    {
+      "path": "weights/oft-cig/proprio_projector.pt",
+      "size": 67553784,
+      "sha256": "5f77e90bced0a6bbb52ebc8197b3a3239d953a74e7508e812364003e694d6117"
+    },
+    {
+      "path": "weights/oft-cig/special_tokens_map.json",
+      "size": 552,
+      "sha256": "cb90ee5cf5793aa444039af9795b00db59d3fef8942e7eca9cf1990bab370d61"
+    },
+    {
+      "path": "weights/oft-cig/tokenizer.json",
+      "size": 1842976,
+      "sha256": "8f5e2869e1807b8bb3c7717a294539c37e9de5d728ad60e31ef57e83cc5ea527"
+    },
+    {
+      "path": "weights/oft-cig/tokenizer.model",
+      "size": 499723,
+      "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347"
+    },
+    {
+      "path": "weights/oft-cig/tokenizer_config.json",
+      "size": 1192,
+      "sha256": "f5f1d3ed015ebb71cf11686ff00bc8e0c25957bbf3952f95312cecc9b168fbea"
+    },
+    {
+      "path": "weights/pi05-baseline/assets/robocasa-kitchen/norm_stats.json",
+      "size": 4393,
+      "sha256": "935fcd389b31d4d9c6b7e4f9ed8c66748fe6736f3084ded5cc962ff1efed0b72"
+    },
+    {
+      "path": "weights/pi05-baseline/model.safetensors",
+      "size": 7233650408,
+      "sha256": "262ffe6f4ab4acca9158245f171fe74aac61f1bd8c178e79e933365513c6677d"
+    },
+    {
+      "path": "weights/pi05-cig/assets/robocasa-kitchen/norm_stats.json",
+      "size": 4393,
+      "sha256": "935fcd389b31d4d9c6b7e4f9ed8c66748fe6736f3084ded5cc962ff1efed0b72"
+    },
+    {
+      "path": "weights/pi05-cig/model.safetensors",
+      "size": 7473091464,
+      "sha256": "8d5a11977193e38669f5e43a5c0de3c4447324d447b10921b9b6226c4032310c"
+    }
+  ]
+}

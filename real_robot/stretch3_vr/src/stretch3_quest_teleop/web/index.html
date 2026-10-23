@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Stretch 3 · Quest Teleop</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <main>
+      <div class="eyebrow">HELLO ROBOT · QUEST 3S</div>
+      <h1>Stretch 3<br>Immersive teleoperation</h1>
+      <p id="connection" class="status wait">Connecting to the robot...</p>
+      <section class="telemetry">
+        <div><span>Mode</span><strong id="mode">NAV</strong></div>
+        <div><span>Base</span><strong id="base">Locked</strong></div>
+        <div><span>Latency</span><strong id="latency">—</strong></div>
+      </section>
+      <button id="enter-vr" disabled>Enter VR control</button>
+      <section class="recording">
+        <label for="task">Task instruction</label>
+        <input id="task" maxlength="500" placeholder="Describe the demonstration">
+        <p id="record-status">Recording unavailable</p>
+        <button id="record-start" disabled>Start recording</button>
+        <button id="record-save" disabled>Save success</button>
+        <button id="record-failure" disabled>Save failure</button>
+        <button id="record-abort" disabled>Abort episode</button>
+        <p class="hint">In VR, release both Grips and click the left stick to start or save success.
+          A red square in each camera panel indicates recording. Aborted or interrupted episodes
+          are retained as incomplete and cannot be replayed.</p>
+      </section>
+      <p id="hint" class="hint">
+        Use HTTPS. Clear the robot workspace and keep the physical emergency stop within reach.
+      </p>
+      <details open>
+        <summary>Connection diagnostics</summary>
+        <dl id="diagnostics"></dl>
+      </details>
+      <details>
+        <summary>Controller reference</summary>
+        <dl>
+          <dt>Left Grip</dt><dd>Hold to enable base and head control; release to stop the base</dd>
+          <dt>Left stick</dt><dd>Move forward/backward or turn left/right</dd>
+          <dt>Left X, short press</dt><dd>NAV → ALIGN → MANIP; press again to return to ALIGN</dd>
+          <dt>Right Grip</dt><dd>Acquire/release the end-effector control anchor</dd>
+          <dt>Right Trigger</dt><dd>Close the gripper and enter PRECISION automatically</dd>
+          <dt>Right A</dt><dd>Switch between MANIP and PRECISION</dd>
+          <dt>Right B</dt><dd>Abort manipulation and return to ALIGN</dd>
+          <dt>Left Y + Grip</dt><dd>Temporarily control the head camera with the headset during manipulation</dd>
+          <dt>Right stick up/down</dt><dd>Move both panels farther/closer (display only)</dd>
+          <dt>Right stick left/right</dt><dd>Enlarge/shrink both panels</dd>
+          <dt>Right stick click</dt><dd>Recenter the panels in front of the headset, including in world-locked mode</dd>
+        </dl>
+      </details>
+      <details>
+        <summary>Panel border colors</summary>
+        <dl>
+          <dt class="swatch nav">NAV</dt><dd>Navigation mode; base uses the configured NAV speed limit</dd>
+          <dt class="swatch align">ALIGN</dt><dd>Alignment mode; reduced base speed</dd>
+          <dt class="swatch manip">MANIP</dt><dd>Manipulation mode; right controller moves the end effector</dd>
+          <dt class="swatch precision">PRECISION</dt><dd>Precision mode; base locked</dd>
+          <dt class="swatch alert">Red</dt><dd>Input timeout or disconnect; stop requested</dd>
+        </dl>
+      </details>
+      <canvas id="xr" width="1280" height="720" hidden></canvas>
+      <section class="previews">
+        <figure>
+          <img id="preview-head" alt="Main camera preview">
+          <figcaption>Left panel · Head D435if / navigation camera</figcaption>
+        </figure>
+        <figure>
+          <img id="preview-gripper" alt="Wrist camera preview">
+          <figcaption>Right panel · Wrist D405</figcaption>
+        </figure>
+      </section>
+      <div id="events" aria-live="polite"></div>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

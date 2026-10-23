@@ -1,0 +1,131 @@
+{
+  "network": {
+    "host": "0.0.0.0",
+    "port": 8443,
+    "input_timeout_s": 0.3,
+    "camera_send_hz": 12.0,
+    "max_message_bytes": 65536
+  },
+  "controls": {
+    "axis_deadzone": 0.12,
+    "long_press_s": 1.0,
+    "auto_precision_on_gripper_close": true,
+    "gripper_close_trigger": 0.15,
+    "ee_translation_scale": 1.0,
+    "head_pan_gain": 0.85,
+    "head_tilt_gain": 0.7,
+    "ee_rotation_scale": 1.0,
+    "operator_yaw_deg": 0.0,
+    "gripper_mode": "analog",
+    "precision_enabled": true,
+    "align_enabled": true
+  },
+  "view": {
+    "distance_m": 2.0,
+    "width_m": 1.45,
+    "height_m": 1.15,
+    "gap_deg": 3.0,
+    "follow_mode": "fixed",
+    "follow_deadzone_deg": 18.0,
+    "follow_time_constant_s": 0.35,
+    "border_ratio": 0.035,
+    "quad_extent_scale": 0.5,
+    "adjust_in_manip": false,
+    "min_distance_m": 0.8,
+    "max_distance_m": 5.0,
+    "min_width_m": 0.5,
+    "max_width_m": 3.0,
+    "focus_by_mode": {},
+    "side_scale": 0.5,
+    "focus_scale": 1.0
+  },
+  "base": {
+    "nav_linear_mps": 0.35,
+    "nav_angular_rps": 0.85,
+    "align_linear_mps": 0.1,
+    "align_angular_rps": 0.35,
+    "manip_linear_mps": 0.035,
+    "manip_angular_rps": 0.2,
+    "head_slowdown_start_rad": 0.52,
+    "head_translation_stop_rad": 1.57,
+    "ik_base_kp": 1.5,
+    "ik_base_max_mps": 0.06
+  },
+  "head": {
+    "look_front": [
+      0.0,
+      -0.52
+    ],
+    "look_at_ee": [
+      -1.5708,
+      -0.7854
+    ],
+    "pan_limits": [
+      -3.5,
+      1.3
+    ],
+    "tilt_limits": [
+      -1.53,
+      0.0
+    ]
+  },
+  "robot": {
+    "cmd_vel_topic": "/stretch/cmd_vel",
+    "joint_states_topic": "/stretch/joint_states",
+    "odom_topic": "/odom",
+    "mode_topic": "/mode",
+    "trajectory_action": "/stretch_controller/follow_joint_trajectory",
+    "navigation_mode_service": "/switch_to_navigation_mode",
+    "stop_service": "/stop_the_robot",
+    "trajectory_time_s": 0.2,
+    "joint_command_hz": 4.0,
+    "gripper_open_m": 0.09,
+    "gripper_closed_m": 0.0,
+    "camera_jpeg_quality": 75,
+    "camera_encode_hz": 15.0,
+    "navigation_camera_topic": "/navigation_camera/image_raw",
+    "head_camera_topic": "/camera/color/image_raw",
+    "gripper_camera_topic": "/gripper_camera/color/image_rect_raw",
+    "camera_rotate_deg": {
+      "navigation": 0,
+      "head": 0,
+      "gripper": 0
+    },
+    "navigation_fallback_after_s": 1.0,
+    "left_panel_by_mode": {}
+  },
+  "depth_overlay": {
+    "gripper": {
+      "enabled": false,
+      "mode": "band",
+      "depth_topic": "/gripper_camera/aligned_depth_to_color/image_raw",
+      "depth_scale_m": 0.001,
+      "reference": "fixed",
+      "reference_m": 0.182,
+      "band_m": 0.015,
+      "roi_fraction": 0.25,
+      "max_valid_m": 1.0,
+      "min_valid_fraction": 0.05,
+      "stale_after_s": 0.25,
+      "alpha": 0.55,
+      "band_color_bgr": [
+        255,
+        0,
+        255
+      ],
+      "edge_color_bgr": [
+        255,
+        128,
+        0
+      ],
+      "edge_threshold_m": 0.005,
+      "falloff_m": 0.0,
+      "near_color_bgr": [
+        255,
+        128,
+        0
+      ],
+      "falloff_gamma": 1.0
+    }
+  }
+}
